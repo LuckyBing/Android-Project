@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CkActivity">
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="#ffff"
+        android:text="信息"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="#ffff"
+        android:text="编辑"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/peo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editText1x"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="55dp"
+        android:hint="姓名"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editText2x"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="55dp"
+        android:hint="电话号码"
+        android:inputType="number"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1x"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editText3x"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="55dp"
+        android:hint="家庭住址"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2x"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editText4x"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="55dp"
+        android:hint="工作"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView8x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3x"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton1x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="#ffff"
+        android:text="拨号"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5x"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="38dp"
+        android:text="姓名"
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText1x"
+        app:layout_constraintEnd_toStartOf="@+id/editText1x"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6x"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="38dp"
+        android:textSize="15dp"
+        android:text="电话"
+        app:layout_constraintEnd_toStartOf="@+id/editText2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5x" />
+
+    <TextView
+        android:id="@+id/textView7x"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="37dp"
+        android:text="地址"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText3x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6x" />
+
+    <TextView
+        android:id="@+id/textView8x"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="37dp"
+        android:text="工作"
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText4x"
+        app:layout_constraintEnd_toStartOf="@+id/editText4x"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
