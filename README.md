@@ -1,4 +1,2 @@
-# calculator and Contact and Weather
-Implemented four mixed operations
-Implemented saving contact information, dialing, and sending messages
-use the API of HeFeng, Check weather conditions across the country
+# 大三安卓课程作业
+粗俗版计算器、通讯录、天气。
